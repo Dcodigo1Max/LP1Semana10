@@ -23,6 +23,19 @@ namespace EqualPlayer
             Controller, Marksman
         }
 
+        public override int GetHashCode(other)
+        {
+            return PClass.GetHashCode()^Name.GetHashCode();
+        }
+
+        public override bool Equals(object other)
+        {
+            Player otherPlayer = other as Player;
+
+            if(otherPlayer is null) return false;
+            if(PClass == otherPlayer.PClass is Name == otherPlayer.Name) return true;
+        }
+
 
 
 
