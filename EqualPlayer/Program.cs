@@ -2,11 +2,29 @@
 
 namespace EqualPlayer
 {
-    public class Program
+    public class Player
     {
+        public PlayerClass PClass {get;}
+        public string Name {get;}
+        public Player(PlayerClass pClass, string name)
+        {
+            PClass = pClass;
+            Name = name;
+        }
+
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            
         }
+
+        public enum PlayerClass
+        {
+            Tank, Fighter, Slayer, Mage,
+            Controller, Marksman
+        }
+
+
+
+
     }
 }
