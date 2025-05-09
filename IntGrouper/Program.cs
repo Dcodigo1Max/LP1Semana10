@@ -8,11 +8,12 @@ namespace IntGrouper
     {
         private static void Main(string[] args)
         {
-            string input_numbers = args[0];
+            string input_strings = args[0];
             string input_lines;
             bool input_real = true;
-            int numbers = Convert.ToInt32(input_lines);
+            int numbers = numbers.ToString();
             int soma = numbers + numbers;
+           
 
             while( input_real = true)
             {
@@ -28,10 +29,10 @@ namespace IntGrouper
 
             foreach(n in numbers)
             {
-
+                Console.WriteLine(soma);
             }
 
-            File.WriteAllLines(input_numbers, );
+            File.WriteAllLines(input_strings, input_lines);
 
 
 
