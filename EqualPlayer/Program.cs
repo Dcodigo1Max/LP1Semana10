@@ -12,13 +12,6 @@ namespace EqualPlayer
             Name = name;
         }
 
-        private static void Main(string[] args)
-        {
-            
-        }
-
-      
-
         public override int GetHashCode()
         {
             return PClass.GetHashCode() ^ Name.GetHashCode();
